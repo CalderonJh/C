@@ -1,3 +1,6 @@
+/*
+Tercer parcial de Fundamentos de Programacion
+*/
 #include <iostream>
 using namespace std;
 
