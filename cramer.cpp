@@ -1,3 +1,7 @@
+/*
+El programa pretende poder solucioner sistemas de ecucaiones lineales de tres ecuaciones y tres incognitas
+usando el metodo de determintes de Cramer.
+*/
 #include <iostream>
 using namespace std;
  
