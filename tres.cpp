@@ -1,11 +1,4 @@
-/*
-a b c
-a c b 
-b c a
-b a c
-c a b
-c b a
-*/
+//ordena tres numeros usando condicionales
 #include <iostream>
 using namespace std;
 
@@ -19,22 +12,20 @@ int main(void){
         aux1 = a;
         a = b;
         b = aux1;
-    } // en este punto a >= b, están ordenados
-    if(c > a){ //cab
+    } // en este punto a >= b, entonces revisar c
+    if(c > a){
+        //cab -> abc
         aux1 = a;
         aux2 = b;
         a = c;
         b = aux1;
         c = aux2;
-    }else if (c < a & c >= b){//acb
+    }else if (c < a & c >= b){
+        //acb -> abc
         aux1 = b;
         b = c;
         c = aux1;
     }
-
     cout << a << " " << b << " " << c;
-
-
-
     return 0;
 }
