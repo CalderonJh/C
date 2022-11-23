@@ -1,10 +1,5 @@
 /*
-a b c
-a c b 
-b c a
-b a c
-c a b
-c b a
+Ordenar tres numeros usando condicionales
 */
 #include <iostream>
 using namespace std;
@@ -33,8 +28,6 @@ int main(void){
     }
 
     cout << a << " " << b << " " << c;
-
-
-
+    
     return 0;
 }
