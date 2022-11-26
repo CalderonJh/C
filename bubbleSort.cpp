@@ -1,10 +1,11 @@
 #include <iostream>
 using namespace std;
 
+int datos[50];
 int main(void){
     int n, aux;
     bool flag;
-    cout << "Metodo burbuja para ordenar n numeros" << endl;   
+    cout << "Metodo burbuja para ordenar n numeros [1, 50]" << endl;   
     do{
         cout << "Ingrese n " << endl;
         cin >> n;
@@ -12,9 +13,8 @@ int main(void){
         cout << "\nQue gei, un numero mayor que cero pa\n";        
     }while(n <= 0);
 
-    int datos[n];
     for (int i = 0; i < n; i++){
-        cout << "Dato "<< i+1 << ": " << endl;
+        cout << "Numero "<< i + 1 << ": " << endl;
         cin >> datos[i];
     }
 
@@ -34,7 +34,7 @@ int main(void){
             break;
         }
     }
-    
+    cout << "\nSorted Array" << endl;
     for (int i = 0; i < n; i++){
         cout << datos[i] << " ";
     }
