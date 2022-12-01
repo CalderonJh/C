@@ -1,11 +1,12 @@
 #include <iostream>
+#include <stdlib.h>
 using namespace std;
 
-int datos[50];
+int *datos, n;
 int main(void){
-    int n, aux;
+    int aux;
     bool flag;
-    cout << "Metodo burbuja para ordenar n numeros [1, 50]" << endl;   
+    cout << "Metodo burbuja para ordenar n numeros. " << endl;   
     do{
         cout << "Ingrese n " << endl;
         cin >> n;
@@ -13,6 +14,7 @@ int main(void){
         cout << "\nQue gei, un numero mayor que cero pa\n";        
     }while(n <= 0);
 
+    datos = new int[n];
     for (int i = 0; i < n; i++){
         cout << "Numero "<< i + 1 << ": " << endl;
         cin >> datos[i];
@@ -38,7 +40,7 @@ int main(void){
     for (int i = 0; i < n; i++){
         cout << datos[i] << " ";
     }
-
+    delete[] datos;
     return 0;
 
 }    
